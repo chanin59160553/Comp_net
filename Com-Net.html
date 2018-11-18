@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculate</title>
+
+    <script src="./big-number.js"></script>
+    <script src="./Script.js"></script>
+    <script src="./ipv6.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    
+</head>
+<body>
+    <section class="logo">
+        <div class="logofont">
+            <h1>&emsp;&emsp;&emsp;
+                My Work 
+            </h1>
+            <h2>
+                - chanin chaisatian  59160553 -
+            </h2>
+        </div>
+    </section>
+   
+    
+    <section class="ipv6"><br>
+            <div class="ipv6_Font">
+
+                    <div>
+                        <p>IP Address</p>
+                        <div>
+                            <input id="ip" placeholder="IP Address" />
+                        </div>
+                        <p  id="error"></p>
+                    </div>
+                    <div >
+                        <p>Prefix length</p>
+                        <select aria-label="Prefix length" id="prefix" title="Prefix length" ="button" aria-haspopup="true"
+                            aria-controls="dropdown-menu2">
+                        </select>
+                    </div>
+                    <br>
+            
+                    <div>
+                        <button>
+                            <a onClick="check_IPV6()">--Calculate--</a>
+                        </button>
+                        
+                    </div>
+                    <br>
+            
+                </div>
+    </section>
+
+    <section id="hide">
+            <div class="Calculated">
+                <div class="CalculatedFont">
+                    <h3>Calculated</h3>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>IP address</td>
+                                <td id="ipAddress"></td>
+                            </tr>
+    
+                            <tr>
+                                <td>Network</td>
+                                <td id="network"></td>
+                            </tr>
+    
+                            <tr>
+                                <td>Prefix length</td>
+                                <td id="prefixLength"></td>
+                            </tr>
+    
+                            <tr>
+                                <td>Network range</td>
+                                <td id="networkLengthStart"></td>
+    
+                            </tr>
+                            <tr>
+                                <td></td>
+    
+                                <td id="networkLengthEnd"></td>
+                            </tr>
+    
+                            <tr>
+                                <td>Total IP addresses</td>
+                                <td id="totalIP"></td>
+                            </tr>
+    
+                            <tr>
+                                <td>IP address (full)</td>
+                                <td id="fullIP"></td>
+                            </tr>
+    
+                            <tr>
+                                <td>Integer ID</td>
+                                <td id="integerIP"></td>
+                            </tr>
+    
+                            <tr>
+                                <td>Hexadecimal ID</td>
+                                <td id="hexIP"></td>
+                            </tr>
+    
+                            <tr>
+                                <td>Dotted decimal ID</td>
+                                <td id="dotIP"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <br>
+            <div class="Subnet">
+                <div class="SubnetFont">
+                        
+                    <h3>Subnet</h3>
+                    <form method="POST" action="">
+                        <div id="subnet"></div>
+                    </form>
+        
+                </div>
+            </div>
+    </section>
+       
+    
+
+</body>
+
+    <script>runPrefix(); hide();</script>
+
+</html>

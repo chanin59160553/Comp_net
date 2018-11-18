@@ -1,0 +1,47 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.logofont{
+    width: 500px; 
+    margin: 0  auto;
+}
+.logo{
+    box-shadow:0 0 10px black;
+    background:rgb(93, 210, 214);
+}
+.ipv6{
+    background:rgb(166, 209, 204);
+    box-shadow:0 0 10px black;
+}
+.ipv6_Font{
+    width: 960px; 
+    margin: 0  auto;
+}
+.Calculated{
+    background:rgb(129, 160, 156);
+    box-shadow:0 0 10px black;
+}
+.CalculatedFont{
+    width: 960px; 
+    margin: 0  auto;
+}
+.SubnetFont{
+    width: 960px; 
+    margin: 0  auto;
+}
+.mywork{
+    width: 500px; 
+    margin: 0  auto;
+}
+.Subnet{
+    background:rgb(167, 196, 192);
+    box-shadow:0 0 10px black;
+}
+.ipv6_Font button:hover{
+    padding: 10px;
+    background: #333333;
+    color: #ffffff;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
